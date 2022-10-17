@@ -1,0 +1,36 @@
+<html>
+<head>
+	<title>渐隐式菜单</title>
+	<meta charset="utf-8"/>
+	<script type="text/javascript" src="js/jquery-3.3.1.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+		  $("input").hover(function(){
+		    $("ul").fadeIn(500);
+		    },function(){
+		    $("ul").fadeOut(500);
+		  });
+		});
+	</script>
+	<style type="text/css">
+		#cont_1{
+			background-color: lightblue;
+			width: 100px;
+			line-height: 30px;
+		}
+	</style>
+</head>
+<body>
+	<div>
+		<input type="button" name="button" value="指向我">
+		<div id = "cont_1">
+			<ul>
+				<li>one</li>
+				<li>two</li>
+				<li>three</li>
+				<li>four</li>
+			</ul>
+		</div>
+	</div>
+</body>
+</html>

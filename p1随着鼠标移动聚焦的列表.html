@@ -1,0 +1,35 @@
+<html>
+<head>
+	<title>列表悬停与离开事件</title>
+	<meta charset="utf-8"/>
+	<script type="text/javascript" src="js/jquery-3.3.1.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+		  $("li").hover(function(){
+		    $(this).css("background-color","yellow");
+		    },function(){
+		    $(this).css("background-color","transparent");
+		  });
+		});
+	</script>
+	<style type="text/css">
+		#cont_1{
+			background-color: #FFFACD;
+			width: 400px;
+			line-height: 30px;
+		}
+	</style>
+</head>
+<body>
+	<div>
+		<div id = "cont_1">
+			<ul>
+				<li>元素1</li>
+				<li>元素2</li>
+				<li>元素3</li>
+				<li>元素4</li>
+			</ul>
+		</div>
+	</div>
+</body>
+</html>

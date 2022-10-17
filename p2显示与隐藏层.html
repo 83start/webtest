@@ -1,0 +1,50 @@
+<html>
+<head>
+	<title>隐藏与显示</title>
+	<meta charset="utf-8"/>
+	<script type="text/javascript" src="js/jquery-3.3.1.js"></script>
+	<script type="text/javascript">
+		function showdiv(){ 
+			$("div:hidden").show(3000);
+		}
+		function hidediv(){ 
+			$("div:visible").hide(3000);
+		}
+	</script>
+	<style type="text/css">
+		.div1{
+			float:left;
+			padding-top:20px;
+			margin-right: 20px;
+			width:70px;
+			height:50px;
+			vertical-align:center;
+			background-color: red;
+		}
+		.div2{
+			float:left;
+			padding-top:20px;
+			margin-right: 20px;
+			width:70px;
+			height:50px;
+			vertical-align:center;
+			background-color: green;
+		}
+		.div3{
+			float:left;
+			padding-top:20px;
+			margin-right: 20px;
+			width:70px;
+			height:50px;
+			vertical-align:center;
+			background-color: blue;
+		}
+	</style>
+<body>
+	<input type="button" value="显示" onclick="showdiv()">
+	<input type="button" value="隐藏" onclick="hidediv()">
+	<div class = "div1"></div>
+	<div class = "div2"></div>
+	<div class = "div3"></div>
+</body>
+</html>
